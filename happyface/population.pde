@@ -20,3 +20,6 @@ void population () {
   mouthY2 = mouthY1;
   mouthThick = 15;
   reset = 1;}
+  measlesX = random(width);
+  measlesY = random(height);
+  measlesdiameter = random(height*1/20, height*1/10);

@@ -5,6 +5,9 @@ int leftEyeX, leftEyeY, leftEyeDiameter;
 int rightEyeX, rightEyeY, rightEyeDiameter;
 int noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
 float mouthX1, mouthY1, mouthX2, mouthY2, mouthThick;
+color measlesColor = FF0303; //Red
+color red = FF0303;
+float measlesX, measlesY, measlesdiameter;
 
 void setup() {
   size (400, 300);
@@ -21,6 +24,10 @@ void setup() {
   line(mouthX1, mouthY1, mouthX2, mouthY2);
   strokeWeight(reset);
   
+ fill(measlesColor);
+ //parameters are randomly set ;)
+  ellipse(measlesX, measlesY, measlesDiameter);
+  fill(reset);
 }//End setup
 
 void draw() {}//End draw
