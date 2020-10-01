@@ -10,6 +10,10 @@ color measlesColor = red;
 color white = 255;
 color colorReset = white;
 float measlesX, measlesY, measlesDiameter;
+int triangle1X1, triangle1Y1, triangle1X2, triangle1Y2, triangle1X3, triangle1Y3;
+int triangle2X1, triangle2Y1, triangle2X2, triangle2Y2, triangle2X3, triangle2Y3;
+int triangle3X1, triangle3Y1, triangle3X2, triangle3Y2, triangle3X3, triangle3Y3;
+int triangle4X1, triangle4Y1, triangle4X2, triangle4Y2, triangle4X3, triangle4Y3;
 
 void setup() {
   size (900, 600);
@@ -23,8 +27,8 @@ void setup() {
 }//End setup
 
 void draw() { 
-  measlesX = random(width);
-  measlesY = random(height);
+  measlesX = random (width*1/2-height*1/2, width*1/2+height*1/2);
+  measlesY = random (height);
   measlesDiameter = random(height*1/60, height*1/20);
   fill(measlesColor);
   //Parameters are randomly set ;)
@@ -36,6 +40,10 @@ void draw() {
   strokeWeight(mouthThick);
   line(mouthX1, mouthY1, mouthX2, mouthY2);
   strokeWeight(reset);
+  triangle(triangle1X1, triangle1Y1, triangle1X2, triangle1Y2, triangle1X3, triangle1Y3);
+  triangle(triangle2X1, triangle2Y1, triangle2X2, triangle2Y2, triangle2X3, triangle2Y3);
+  triangle(triangle3X1, triangle3Y1, triangle3X2, triangle3Y2, triangle3X3, triangle3Y3);
+  triangle(triangle4X1, triangle4Y1, triangle4X2, triangle4Y2, triangle4X3, triangle4Y3);
 }//End draw
 
 void keyPressed() {
