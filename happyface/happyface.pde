@@ -16,12 +16,21 @@ int triangle3X1, triangle3Y1, triangle3X2, triangle3Y2, triangle3X3, triangle3Y3
 int triangle4X1, triangle4Y1, triangle4X2, triangle4Y2, triangle4X3, triangle4Y3;
 int buttonX, buttonY, buttonWidth, buttonHeight;
 color buttonColour, yellow, purple;
+String quit = "X";
+PFont titleFont;
+
+
 
 void setup() {
   size (900, 600);
   //fullScreen();
-  println("Screen Width is", displayWidth, "Screen Height is", displayHeight);
   //
+  println("Screen Width is", displayWidth, "Screen Height is", displayHeight);
+  //String[] fontList = PFont.list(); //To list fonts available on OS
+  //println("Start of Console");
+  //printArray(fontList);
+//
+//
   population();
   //
   //faceDraw();

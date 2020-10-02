@@ -44,13 +44,12 @@ void population() {
   triangle4Y2 = height*1 ;
   triangle4X3 = width*1/7 ;
   triangle4Y3 = height*3/5 ;
-  
   yellow = #F6FF00;
   purple = #7B00C9;
  buttonX = width*15/16;
  buttonY = height*0/7;
  buttonWidth = width*1/16;
  buttonHeight = height*1/7;
-  
+ 
   
 }//End population
