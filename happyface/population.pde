@@ -8,6 +8,12 @@ void population() {
   rightEyeX = width*5/8;
   rightEyeY = leftEyeY;
   rightEyeDiameter = leftEyeDiameter;
+  leftEyepupilX = width*3/8;
+  leftEyepupilY = height*1/4;
+  leftEyepupilDiameter = height/99 ;
+  rightEyepupilX =  width*5/8;
+  rightEyepupilY = height*1/4;
+  rightEyeDiameterpupil = leftEyepupilDiameter ;
   noseX1 = width/2;
   noseY1 = height*2/5;
   noseX2 = width*7/16;
@@ -50,6 +56,7 @@ void population() {
  buttonY = height*0/7;
  buttonWidth = width*1/16;
  buttonHeight = height*1/7;
+ black = #030303;
  
   
 }//End population

@@ -3,6 +3,8 @@ int reset;
 int faceX, faceY, faceDiameter;
 int leftEyeX, leftEyeY, leftEyeDiameter;
 int rightEyeX, rightEyeY, rightEyeDiameter;
+int rightEyepupilX, rightEyepupilY, rightEyeDiameterpupil;
+int leftEyepupilX, leftEyepupilY, leftEyepupilDiameter;
 int noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
 float mouthX1, mouthY1, mouthX2, mouthY2, mouthThick;
 color red = #FF0303;
@@ -18,6 +20,7 @@ int buttonX, buttonY, buttonWidth, buttonHeight;
 color buttonColour, yellow, purple;
 String quit = "X";
 PFont titleFont;
+color pupilcolor, black;
 
 
 
@@ -56,6 +59,9 @@ void draw() {
   fill(colorReset);
   ellipse(leftEyeX, leftEyeY, leftEyeDiameter, leftEyeDiameter);
   ellipse(rightEyeX, rightEyeY, rightEyeDiameter, rightEyeDiameter);
+  fill(pupilcolor = black);
+  ellipse(leftEyepupilX, leftEyepupilY, leftEyepupilDiameter, leftEyepupilDiameter) ;
+  ellipse(rightEyepupilX, rightEyepupilY, rightEyeDiameterpupil, rightEyeDiameterpupil) ;
   triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
   strokeWeight(mouthThick);
   line(mouthX1, mouthY1, mouthX2, mouthY2);
