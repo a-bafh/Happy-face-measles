@@ -10,7 +10,7 @@ void population() {
   rightEyeDiameter = leftEyeDiameter;
   leftEyepupilX = width*3/8;
   leftEyepupilY = height*1/4;
-  leftEyepupilDiameter = height/99 ;
+  leftEyepupilDiameter = height/50 ;
   rightEyepupilX =  width*5/8;
   rightEyepupilY = height*1/4;
   rightEyeDiameterpupil = leftEyepupilDiameter ;
